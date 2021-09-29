@@ -76,3 +76,4 @@ Log to STDOUT or an external agent
 ```
 ENV RAILS_LOG_STDOUT=true
 ```
+

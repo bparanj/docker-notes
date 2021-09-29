@@ -62,6 +62,10 @@ docker container run -d --name web-ping diamol/ch03-web-ping
 docker container logs web-ping
 ```
 
+```
+docker container logs --tail 4 todo-dev
+```
+
 ## Overriding Environment Variables
 
 Use environment variable:
@@ -137,9 +141,10 @@ Rebuild the optimized image:
 docker image build -t web-ping:v3 .
 ```
 
+## Scale Up
 
+Run three instances of iotd:
 
-
-
-
-
+```
+docker-compose up -d --scale iotd=3
+```
